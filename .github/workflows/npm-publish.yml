@@ -4,7 +4,7 @@ jobs:
         name: Build image job
         steps:
             - name: Checkout master
-              uses: loveafa/@master
+              uses: loveafa/baota@master
             - name: Build and publish image
               uses: ilteoood/docker_buildx@master
               with:
