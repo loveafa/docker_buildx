@@ -1,0 +1,14 @@
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Build image job
+        steps:
+            - name: Checkout master
+              uses: loveafa/@master
+            - name: Build and publish image
+              uses: ilteoood/docker_buildx@master
+              with:
+                publish: true
+                imageName: fachnan/baota
+                dockerHubUser: fachnan
+                dockerHubPassword: eTEi1K4E8Xlh4v
